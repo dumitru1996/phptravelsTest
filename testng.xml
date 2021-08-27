@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/dbodac/IdeaProjects/phptravelsTest">
+    <classes>
+        <class name="Pages.PHPTrevelersPages"/>
+        <class name="util.Driver"/>
+        <class name="Steps.BeforeAfterSteps"/>
+        <class name="Steps.GivenSteps"/>
+        <class name="Steps.WhenSteps"/>
+        <class name="Steps.ThensSteps"/>
+
+        <class name="runner.TestRunner">
+            <methods>
+                <include name="runCukes"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
